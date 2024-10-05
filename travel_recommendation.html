@@ -78,6 +78,41 @@
             color: #ddd;
         }
 
+        .contact {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2em;
+            margin: 2em auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+        .contact h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact form input, .contact form textarea {
+            width: 80%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .contact form button {
+            padding: 0.5em 2em;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #555;
+        }
+
     </style>
 </head>
 <body>
@@ -85,7 +120,7 @@
         <div>
             <a href="home.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="#" id="contact-link">Contact Us</a>
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Search...">
@@ -97,13 +132,32 @@
         <h1>Bienvendo a su pagina de Viajes!</h1>
         <p>Está en el lugar correcto !!! un mundo de ofertas, para conocer y explorar tus destino de ensueño. Whether you're looking for information, services, or just browsing, we hope you find what you're looking for. Enjoy your stay!</p>
     </div>
+    <div class="contact" id="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
     <div class="social-bar">
         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </div>
-
+    <script>
+        document.getElementById('contact-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var contactSection = document.getElementById('contact-section');
+            if (contactSection.style.display === 'none' || contactSection.style.display === '') {
+                contactSection.style.display = 'block';
+            } else {
+                contactSection.style.display = 'none';
+            }
+        });
+    </script>
 
 </body>
 </html>
