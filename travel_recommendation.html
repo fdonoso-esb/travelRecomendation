@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-bar input[type="text"] {
+            padding: 0.5em;
+            margin-right: 0.5em;
+        }
+        .search-bar button {
+            padding: 0.5em;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('fondo-viajes.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        .intro {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 2em;
+            margin: 2em auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+
+        .social-bar {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1em;
+            border-radius: 0 10px 10px 0;
+        }
+        .social-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0.5em 0;
+            font-size: 1.5em;
+        }
+        .social-bar a:hover {
+            color: #ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+            <button type="button">Reset</button>
+        </div>
+    </nav>
+    <div class="intro">
+        <h1>Bienvendo a su pagina de Viajes!</h1>
+        <p>Está en el lugar correcto !!! un mundo de ofertas, para conocer y explorar tus destino de ensueño. Whether you're looking for information, services, or just browsing, we hope you find what you're looking for. Enjoy your stay!</p>
+    </div>
+    <div class="social-bar">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+
+</body>
+</html>
