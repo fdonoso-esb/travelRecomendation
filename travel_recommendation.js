@@ -1,27 +1,37 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
+    var contactSection = document.getElementById('contact-section');
+    var aboutSection = document.getElementById('about-section');
+    contactSection.style.display = 'none';
+    aboutSection.style.display = 'none';
 
 document.getElementById('contact-link').addEventListener('click', function(event) {
     event.preventDefault();
     var contactSection = document.getElementById('contact-section');
+    var aboutSection = document.getElementById('about-section');
     if (contactSection.style.display === 'none' || contactSection.style.display === '') {
+        aboutSection.style.display = 'none';
         contactSection.style.display = 'block';
     } else {
         contactSection.style.display = 'none';
     }
 });
-
 
 document.getElementById('about-link').addEventListener('click', function(event) {
     event.preventDefault();
-    var contactSection = document.getElementById('about-section');
-    if (contactSection.style.display === 'none' || contactSection.style.display === '') {
-        contactSection.style.display = 'block';
-    } else {
+    var aboutSection = document.getElementById('about-section');
+    var contactSection = document.getElementById('contact-section');
+    if (aboutSection.style.display === 'none' || aboutSection.style.display === '') {
         contactSection.style.display = 'none';
+        aboutSection.style.display = 'block';
+    } else {
+        aboutSection.style.display = 'none';
     }
 });
+
+
+
 document.getElementById('search-button').addEventListener('click', function() {
     const searchTerm = document.getElementById('search-button').value.toLowerCase();
     console.log(searchTerm);
