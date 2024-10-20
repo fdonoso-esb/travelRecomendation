@@ -1,6 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
+
 document.getElementById('contact-link').addEventListener('click', function(event) {
     event.preventDefault();
     var contactSection = document.getElementById('contact-section');
@@ -12,6 +13,15 @@ document.getElementById('contact-link').addEventListener('click', function(event
 });
 
 
+document.getElementById('about-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    var contactSection = document.getElementById('about-section');
+    if (contactSection.style.display === 'none' || contactSection.style.display === '') {
+        contactSection.style.display = 'block';
+    } else {
+        contactSection.style.display = 'none';
+    }
+});
 document.getElementById('search-button').addEventListener('click', function() {
     const searchTerm = document.getElementById('search-button').value.toLowerCase();
     console.log(searchTerm);
@@ -63,4 +73,7 @@ function displayResults(results) {
         resultsContainer.appendChild(card);
     });
 }
+
+
+
 });

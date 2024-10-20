@@ -11,7 +11,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: #333;
-            padding: 1em;
+            padding: 0.1em;
         }
         nav a {
             color: white;
@@ -35,7 +35,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-image: url('fondo-viajes.jpg'); /* Replace with your image URL */
+            background-image: url('Nueva-York-06092019.jpg'); /* Replace with your image URL */
             background-size: cover;
             background-position: center;
             color: white;
@@ -113,6 +113,45 @@
             background-color: #555;
         }
 
+
+        .about {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2em;
+            margin: 2em auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+        .about h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        .about form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .about form input, .about form textarea {
+            width: 80%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .about form button {
+            padding: 0.5em 2em;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        .about form button:hover {
+            background-color: #555;
+        }
+
+
+
+
         .container {
             max-width: 1200px;
             margin: 2em auto;
@@ -159,8 +198,8 @@
 <body>
     <nav>
         <div>
-            <a href="home.html">Home</a>
-            <a href="about.html">About Us</a>
+            <a href="travel_recommendation.html">Home</a>
+            <a href= #  id="about-link">About Us</a>
             <a href="#" id="contact-link">Contact Us</a>
         </div>
         <div class="search-bar">
@@ -185,6 +224,26 @@
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
+        </form>
+    </div>
+    <div class="about" id="about-section">
+        <h2>About Us</h2>
+        <form>
+            <div>
+                <h3>Personal-1</h3>
+                <p>Encargado de...</p>
+                <button type="submit" >Ceo</button>
+            </div>
+            <div>
+                <h3>Personal-2</h3>
+                <p>Encargado de...</p>
+                <button type="submit"  >Team Lead</button>
+            </div>
+            <div>
+                <h3>Personal-3</h3>
+                <p>Encargado de...</p>
+                <button type="submit"  >Delivery Head</button>
+            </div>
         </form>
     </div>
     <div class="social-bar">
