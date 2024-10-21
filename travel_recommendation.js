@@ -6,6 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
     contactSection.style.display = 'none';
     aboutSection.style.display = 'none';
 
+
+document.getElementById('home-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        var contactSection = document.getElementById('contact-section');
+        var aboutSection = document.getElementById('about-section');
+        contactSection.style.display = 'none';
+        aboutSection.style.display = 'none';
+        window.location.href = 'travel_recommendation.html';
+});
+    
+
 document.getElementById('contact-link').addEventListener('click', function(event) {
     event.preventDefault();
     var contactSection = document.getElementById('contact-section');
@@ -18,6 +29,7 @@ document.getElementById('contact-link').addEventListener('click', function(event
     }
 });
 
+
 document.getElementById('about-link').addEventListener('click', function(event) {
     event.preventDefault();
     var aboutSection = document.getElementById('about-section');
@@ -28,6 +40,15 @@ document.getElementById('about-link').addEventListener('click', function(event) 
     } else {
         aboutSection.style.display = 'none';
     }
+});
+
+document.getElementById('reset-button').addEventListener('click', function(event) {
+    event.preventDefault();
+    var contactSection = document.getElementById('contact-section');
+    var aboutSection = document.getElementById('about-section');
+    contactSection.style.display = 'none';
+    aboutSection.style.display = 'none';
+    window.location.href = 'travel_recommendation.html';
 });
 
 
