@@ -32,15 +32,25 @@
             padding: 0.5em;
         }
 
+/*
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-image: url('Nueva-York-06092019.jpg'); /* Replace with your image URL */
+            background-image: url('Nueva-York-06092019.jpg'); 
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
         }
+*/
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('Nueva-York-06092019.jpg') no-repeat center center fixed;
+            color: white;
+            text-align: center;
+        }
+                
         .intro {
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
             padding: 2em;
@@ -120,6 +130,7 @@
             margin: 2em auto;
             width: 80%;
             border-radius: 10px;
+            align-content: center;
         }
         .about h2 {
             font-size: 2em;
@@ -149,8 +160,6 @@
         .about form button:hover {
             background-color: #555;
         }
-
-
 
 
         .container {
@@ -204,7 +213,7 @@
             <a href="#" id="contact-link">Contact Us</a>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Search...">
+            <input type="text" id="busqueda" placeholder="Search...">
             <button type="button" id="search-button">Search</button>
             <button type="button" id="reset-button">Reset</button>
         </div>
@@ -231,17 +240,17 @@
         <h2>About Us</h2>
         <form>
             <div>
-                <h3>Personal-1</h3>
+                <h3>Personal-101</h3>
                 <p><h4>Encargado de...</h4></p>
                 <button type="submit" >Ceo</button>
             </div>
             <div>
-                <h3>Personal-2</h3>
+                <h3>Personal-202</h3>
                 <p><h4>Encargado de...</h4></p>
                 <button type="submit"  >Team Lead</button>
             </div>
             <div>
-                <h3>Personal-3</h3>
+                <h3>Personal-303</h3>
                 <p><h4>Encargado de...</h4></p>
                 <button type="submit"  >Delivery Head</button>
             </div>

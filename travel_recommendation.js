@@ -39,7 +39,9 @@ document.getElementById('about-link').addEventListener('click', function(event) 
         aboutSection.style.display = 'block';
     } else {
         aboutSection.style.display = 'none';
+        
     }
+    window.location.href = 'About.html';
 });
 
 document.getElementById('reset-button').addEventListener('click', function(event) {
@@ -54,9 +56,14 @@ document.getElementById('reset-button').addEventListener('click', function(event
 
 
 document.getElementById('search-button').addEventListener('click', function() {
-    const searchTerm = document.getElementById('search-button').value.toLowerCase();
-    console.log(searchTerm);
-    fetch('./travel_recommendation_api.json')
+    const searchTerm = document.getElementById('busqueda').value.toLowerCase();
+
+    if ( searchTerm.length === 0 ) {
+
+        alert('Por favor, ingrese un término de búsqueda.');
+    } else {    
+
+        fetch('./travel_recommendation_api.json')
         .then(response => response.json())
         .then(data => {
             console.log(data); // Log the data to check if it's accessible
@@ -80,8 +87,12 @@ document.getElementById('search-button').addEventListener('click', function() {
             });
             displayResults(results);
         })
-        .catch(error => console.error('Error fetching data:', error));
-});
+//        .catch(error => console.error('Error fetching data:', error));
+        .catch(error => alert('Error fetching data:', error));
+    
+    }   
+}
+);
 
 document.getElementById('reset-button').addEventListener('click', function() {
     document.getElementById('search-button').value = '';
