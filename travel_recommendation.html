@@ -21,6 +21,7 @@
         nav a:hover {
             text-decoration: underline;
         }
+        
         .search-bar {
             display: flex;
         }
@@ -123,6 +124,11 @@
             background-color: #555;
         }
 
+        .container-about {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+        }
 
         .about {
             background-color: rgba(0, 0, 0, 0.5);
@@ -233,29 +239,36 @@
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
+            <button type="submit" onclick="thankyou()">Send</button>
+
         </form>
     </div>
-    <div class="about" id="about-section">
+    <form id="aboutForm">
+        <div class="about" id="about-section">
         <h2>About Us</h2>
-        <form>
-            <div>
-                <h3>Personal-101</h3>
-                <p><h4>Encargado de...</h4></p>
-                <button type="submit" >Ceo</button>
-            </div>
-            <div>
-                <h3>Personal-202</h3>
-                <p><h4>Encargado de...</h4></p>
-                <button type="submit"  >Team Lead</button>
-            </div>
-            <div>
-                <h3>Personal-303</h3>
-                <p><h4>Encargado de...</h4></p>
-                <button type="submit"  >Delivery Head</button>
-            </div>
-        </form>
-    </div>
+        <p>Feel free to contact us to know more about your conditions and for treatment methods.</p>
+                <div class="container-about" id="container-about">
+                <div class="personal">
+                    <h3>John Doe</h3>
+                    <p>John is responsible for...</p>
+                    <button type="submit" >Ceo</button>
+                </div>
+                <div class="personal">
+                    <h3>Celina Thomas</h3>
+                    <p>Celina Thomas is responsible for...</p>
+                    <button type="submit"  >Team Lead</button>
+                </div>
+                <div class="personal">
+                    <h3>Mike Tysen</h3>
+                    <p>Mike Tysen is responsible for...</p>
+                    <button type="submit"  >Delivery Head</button>
+                </div>
+                </div>
+        </div>
+    </form>
+
+
+    
     <div class="social-bar">
         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -263,5 +276,10 @@
         <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </div>
     <script src="travel_recommendation.js"></script>
+    <script>
+        function thankyou(){
+            alert('Thank you for contacting us!')
+        }
+    </script>
 </body>
 </html>

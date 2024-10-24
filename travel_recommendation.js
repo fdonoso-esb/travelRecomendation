@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     aboutSection.style.display = 'none';
 
 
+
 document.getElementById('home-link').addEventListener('click', function(event) {
         event.preventDefault();
         var contactSection = document.getElementById('contact-section');
@@ -41,8 +42,8 @@ document.getElementById('about-link').addEventListener('click', function(event) 
         aboutSection.style.display = 'none';
         
     }
-    window.location.href = 'About.html';
 });
+
 
 document.getElementById('reset-button').addEventListener('click', function(event) {
     event.preventDefault();
@@ -115,7 +116,6 @@ function displayResults(results) {
         resultsContainer.appendChild(card);
     });
 }
-
 
 
 });
