@@ -14,7 +14,7 @@ document.getElementById('home-link').addEventListener('click', function(event) {
         var aboutSection = document.getElementById('about-section');
         contactSection.style.display = 'none';
         aboutSection.style.display = 'none';
-        window.location.href = 'travel_recommendation.html';
+        window.location.href = 'index.html';
 });
     
 
@@ -51,7 +51,7 @@ document.getElementById('reset-button').addEventListener('click', function(event
     var aboutSection = document.getElementById('about-section');
     contactSection.style.display = 'none';
     aboutSection.style.display = 'none';
-    window.location.href = 'travel_recommendation.html';
+    window.location.href = 'index.html';
 });
 
 
